@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import Reachability
 
 public final class SomeSampleLib1 {
+    
+   public var reachability: Reachability?
+    
+    public init() {
+        print("SomeSampleLib1 initialised")
+        reachability = Reachability()
+    }
     
     public func add(a:Int, b: Int) -> Int {
         return a + b
